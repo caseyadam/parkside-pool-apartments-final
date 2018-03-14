@@ -1,0 +1,427 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+
+* {
+  color: $darkgrey;
+}
+
+a {
+  color: $darkgrey;
+  text-decoration: none !important;
+  transition: .2s ease-in-out;
+  &:hover{
+    color: $blue;
+  }
+}
+
+html, body {
+  background: $lightgrey;
+  font-family: 'Halant', serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $blue;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: $blue;
+  padding: 20px 0;
+}
+
+h3 {
+  color: $blue;
+  font-size: 1.5rem;
+  padding: 0 0 10px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.col{
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+#book {
+  background-color: $blue;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  &:hover{
+    background-color: $darkblue;
+  }
+}
+
+#book-btn {
+  background-color: $blue;
+  border: none;
+  border-radius: 4px;
+  &:hover{
+    background-color: $darkblue;
+  }
+  a {
+    color: white;
+  }
+}
+
+#list-line {
+  border-right: 1px solid $blue;
+  padding-right: .7rem;
+}
+
+// HEADER
+.jumbotron {
+  padding: 0px;
+  margin: 0;
+  border-radius: 0;
+  background-image: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(0,0,0,.2) 100%),url(../img/ppa-front.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  #transparent-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding-bottom: 2rem;
+    .container{
+      height: 20%;
+      #seperator{
+        border-right: 1px solid $blue;
+        padding-right: .3rem;
+      }
+      #header-links{
+        margin-top: 3rem;
+      }
+      #contact-box {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+
+// STICKY NAV
+#sticky-nav {
+  background: #FFF;
+  padding: .5rem;
+  border-bottom: 1px solid $borderGrey;
+  h3{
+    padding: .6rem 0;
+    border-bottom: 2px solid $borderGrey;
+  }
+  #push-up {
+    margin-bottom: .7rem;
+  }
+  ul {
+    padding-top: 1rem;
+  }
+  #nav-tour {
+    margin-top: .3rem;
+    border-top: 2px solid $borderGrey;
+    #nav-schedule {
+      padding-top: 12px;
+      display: inline-block;
+    }
+    #book-btn {
+      padding: 2px 8px 0px 6px !important;
+      margin-bottom: 4px;
+    }
+  }
+  #phone {
+    padding-top: 6px;
+  }
+}
+
+//OFFICE HOURS MODAL
+#officeHoursModal {
+  #officeHoursLabel{
+    font-size: 2.5rem;
+    color: $blue;
+  }
+  span {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+
+// FLOOR PLANS
+#floor-plans {
+  padding-bottom: 1.5%;
+  .card {
+    margin: 15px !important;
+  }
+  #view {
+    margin-left: 40%;
+    background-color: $blue;
+    border: none;
+    &:hover{
+      background-color: $darkblue;
+    }
+  }
+  #disclaimer {
+    font-size: .8rem;
+    padding-top: 1.7rem;
+    color: $medDarkBrown;
+  }
+}
+
+//FEATURES AND AMENINTIES
+#features-amenities{
+  background: $lightbrown;
+  padding: 4% 0;
+    li {
+      padding: 2px;
+      display: list-item !important;
+      line-height: 1.1rem !important;
+    }
+}
+
+// PHOTO BOXES
+#photo-boxes{
+  padding: 0px;
+  margin: 0px;
+  .row{
+    padding: 0px;
+    margin: 0px;
+    .col-sm-6 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    #box-info {
+      padding-top: 10%;
+      #hop-in{
+        font-family: 'Anton', sans-serif;
+        color: #6AB4C5;
+        text-align: center;
+        font-size: 3.5rem;
+      }
+      #healthy{
+        font-family: 'Shadows Into Light', cursive;
+        color: $red;
+        text-align: center;
+        font-size: 3.5rem;
+      }
+      h2 {
+        margin-left: 6.5%;
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 0 3rem;
+        line-height: 2rem !important;
+      }
+    }
+  }
+}
+
+// MAP
+#mapSection{
+  text-align: center;
+  padding: 0;
+  background: #fff;
+  h1{
+    padding: 40px;
+  }
+  .map-container {
+    height: 60vh;
+    width: 100%;
+    #map{
+      height: 60vh;
+      width: 100%;
+    }
+  }
+}
+
+// CONTACT US
+#contact-us{
+  background-color: $lightgrey;
+  padding: 3%;
+  #contact-info{
+    padding-top: 2%;
+    font-size: 1.7rem;
+    #info{
+      margin: 1rem;
+    }
+    #info-spacer{
+      margin: 1rem;
+    }
+    span{
+      line-height: 1.2rem;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #233741;
+  padding: 1%;
+  #footer-info{
+    margin: 0 auto;
+    #center-left{
+      margin-left: 5rem;
+    }
+  }
+  ul {
+    padding: 10px;
+  }
+  a, li, span{
+    color: $lightblue;
+  }
+  #ppa-logo {
+    border: 2px solid $lightblue;
+    padding: 0px 4px;
+  }
+  #footer-icons{
+    padding-top: 10px;
+    #center-right{
+      margin-left: 9rem;
+      margin-right: 3rem;
+    }
+    #icon {
+      height: 28px;
+      width: 28px;
+    }
+    #my-logo {
+      border-left: 1px solid $lightblue;
+      padding-left: 1rem;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+//phone
+@media (min-width: 0px) and (max-width: 600px) {
+  #transparent-box {
+    text-align: center;
+    h1 {
+      font-size: 1.9rem;
+    }
+    li {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    #contact-box {
+      display: none;
+    }
+  }
+
+  #sticky-nav {
+    display: none;
+  }
+
+  #floor-plans {
+    #disclaimer {
+      padding-top: 0;
+    }
+  }
+
+  #photo-boxes {
+    #box-info {
+      padding-top: 0 !important;
+      padding-bottom: 3%;
+    }
+  }
+
+  footer {
+    text-align: center;
+    li{
+      line-height: 1.5rem;
+    }
+    #center-left{
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+    #ppa-logo {
+      display: none;
+    }
+      #my-logo {
+        border-left: 1px solid $darkblue !important;
+        padding-left: 0 !important;
+      }
+  }
+}
+
+//tablet portrait
+@media (min-width: 601px) and (max-width: 900px) {
+  #photo-boxes {
+    #box-info {
+      padding-top: 0 !important;
+      padding-bottom: 3%;
+    }
+  }
+
+  #sticky-nav {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    font-size: .7rem;
+    #footer-info{
+      padding: 1rem 0;
+    }
+    li{
+      line-height: 1.2rem;
+    }
+    #center-left{
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+    #ppa-logo {
+      display: none;
+    }
+    #my-logo {
+      padding-left: .5rem !important;
+    }
+  }
+}
+
+//tablet landscape
+@media (min-width: 901px) and (max-width: 1200px) {
+  #photo-boxes{
+    #box-info {
+      padding-top: 5% !important;
+    }
+  }
+
+  footer {
+    padding: 0px 3rem;
+    a {
+      line-height: 3rem;
+    }
+    #footer-info{
+      padding: 1rem 0;
+    }
+    #center-left{
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+    #center-right {
+      margin-left: 7rem !important;
+    }
+  }
+}
+//desktop
+@media (min-width: 1201px) and (max-width: 1800px) {
+
+}
+//big desktop
+@media (min-width: 1801px) and (max-width: 2000px) {
+
+}
