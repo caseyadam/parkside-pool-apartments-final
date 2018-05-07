@@ -125,7 +125,7 @@
   <div class="card-deck">
     <div class="card mx-auto" >
       <h5 class="card-title text-center list-group-item">STUDIO</h5>
-      <img class="card-img-top" src="./img/floor-plans/studio.jpg" alt="Card image cap">
+      <img class="card-img-top" src="./img/floor-plans/studio.svg" alt="Card image cap">
       <ul class="list-group list-group-flush">
         <li class="list-group-item text-center">1 Bath // 365 Sq. Ft.</li>
         <li class="list-group-item text-center">$555-$595</li>
@@ -193,7 +193,7 @@
 <!-- ONE BEDROOM CARD -->
     <div class="card mx-auto" >
       <h5 class="card-title text-center list-group-item">1 BEDROOM</h5>
-      <img class="card-img-top" src="./img/floor-plans/one-bedroom.jpg" alt="Card image cap">
+      <img class="card-img-top" src="./img/floor-plans/one-bedroom.svg" alt="Card image cap">
       <ul class="list-group list-group-flush">
         <li class="list-group-item text-center">1 Bath // 585 Sq. Ft.</li>
         <li class="list-group-item text-center">$665-$695</li>
@@ -265,7 +265,7 @@
 <!-- TWO BEDROOM CARD -->
     <div class="card mx-auto" >
       <h5 class="card-title text-center list-group-item">2 BEDROOM</h5>
-      <img class="card-img-top" src="./img/floor-plans/two-bedroom.jpg" alt="Card image cap">
+      <img class="card-img-top" src="./img/floor-plans/two-bedroom.svg" alt="Card image cap">
       <ul class="list-group list-group-flush">
         <li class="list-group-item text-center">1 Bath // 865 Sq. Ft.</li>
         <li class="list-group-item text-center">$765-$795</li>
